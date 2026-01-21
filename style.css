@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: red;
+}
+
+.header {
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    gap: 10px;
+    padding: 0 20px;
+}
+.list-link {
+
+}
+
+.link {
+
+}
+
+.icon-bar{
+    display: none;
+}
+
+.list-cource{
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.cource-item{
+    background-color: lawngreen;
+    height: 100px;
+    border: 1px solid black;
+    width: 100%;
+    
+}
+
+/* responsive */
+@media screen and (max-width: 480px){
+    .container{
+        background-color: blue;
+    }
+    .cource-item{
+        flex: 0 0 calc(3333.3333% - 19px);
+    }
+    
+}
+
+/* tablet */
+@media screen and (min-width: 481px) and (max-width:768px){
+    .container{
+        background-color: yellow;
+    }
+    .icon-bar{
+        display: block;
+}
+    .list-link{
+        display: none;
+    }
+    .cource-item{
+        width: calc(50% - 16px);
+    }
+    
+}
+
+/* desktop small */
+@media screen and (min-width:769px)  and (max-width:1279){
+    .container {
+        background-color: aqua;
+    }
+    .cource-item{
+        width: calc(33.3333% - 16px);
+    }
+}
+
+/* desktop large  */
+@media screen and (min-width:1280px){
+    .container{
+        background-color:lightgoldenrodyellow;
+    }
+    
+}1
+.header {
+}
+.cource-process {
+}
+.my-learning {
+}
+.cource-recommend {
+}
