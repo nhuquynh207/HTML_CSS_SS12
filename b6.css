@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: rgba(17, 24, 39, 1);
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding:20px 50px;
+}
+
+.list-card {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.logo{
+    color: rgb(106,110,211);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.card{
+    flex: 1;
+}
+
+.card h3{
+    font-size: 20px;
+}
+
+.card p{
+    color: rgba(247, 246, 246, 0.6);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.icon-effect {
+    border-radius: 50%;
+    background-color: #282F3C;
+    padding: 10px;
+
+}
+
+.end-header {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(247, 246, 246, 0.6);
+    padding-top:20px ;
+    border-top: 1px solid rgba(247, 246, 246, 0.6);
+}
+
+@media screen and (min-width: 1025px) {
+    /* CSS cho Desktop */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .list-card{
+        gap:20px;
+        flex: 0 0 calc(20%-20px)
+    }
+    /* CSS cho Tablet */
+}
+
+@media screen and (max-width: 767px) {
+     .list-card {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .card {
+        flex: 0 0 calc(50% - 30px);
+    }
+
+    .footer {
+        padding: 20px 30px;
+    }
+    /* CSS cho Mobile */
+}
+
